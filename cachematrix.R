@@ -1,5 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Functions use to efficiently calculate the inverse of a matrix.
+## Caching is used to decrease the cost of repeat calculations.
 
 ## makeCacheMatrix takes a matrix and returns a list of function objects.
 ## The functions include get, set, setinverted, and getinverted. get and set
