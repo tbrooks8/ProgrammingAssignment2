@@ -1,7 +1,11 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## makeCacheMatrix takes a matrix and returns a list of function objects.
+## The functions include get, set, setinverted, and getinverted. get and set
+## get and set the base matrix. getinverted and setinverted get and set
+## the matrix inverted. There is no validation to ensure that a inverted
+## matrix set with setinverted is mathematically correct.
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -18,7 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve is used with a list object returned from makeCacheMatrix.
+## If the inverted matrix has not been calculated before, it calculates it
+## caches it, and returns it. If it has been calculated before, it
+## returns the cached copy.
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinverted()
